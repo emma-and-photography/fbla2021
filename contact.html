@@ -22,13 +22,27 @@
                     <a class="uk-navbar-item uk-logo uk-text-emphasis" style="font-family: 'Courier New', monospace;">EMMA & PHOTOGRAPHY</a>
                 </div>
                 <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
+                    <ul class="uk-navbar-nav uk-visible@m">
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./portfolio.html">Portfolio</a></li>
                         <li><a href="./packages.html">Packages</a></li>
                         <li><a href="./about.html">About</a></li>
                         <li class="uk-active"><a href="./contact.html">Contact</a></li>
                     </ul>
+                    <div class="uk-navbar-item uk-hidden@m">
+                        <a href="#offcanvas-slide" class="uk-navbar-toggle" uk-toggle uk-navbar-toggle-icon></a>
+                        <div id="offcanvas-slide" uk-offcanvas="flip: true; overlay: true">
+                            <div class="uk-offcanvas-bar">
+                                <ul class="uk-nav uk-nav-primary">
+                                    <li><a href="./index.html">Home</a></li>
+                                    <li><a href="./portfolio.html">Portfolio</a></li>
+                                    <li><a href="./packages.html">Packages</a></li>
+                                    <li><a href="./about.html">About</a></li>
+                                    <li class="uk-active"><a href="./contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     <div class="uk-navbar-item">
                         <a class="snipcart-checkout" uk-icon="icon: cart"></a>&nbsp;&nbsp;
                         <span class="snipcart-items-count uk-badge"></span>
@@ -40,13 +54,13 @@
     <div class="uk-section uk-section-muted">
         <div class="uk-container">
             <h3 class="uk-heading-bullet">Contact</h3>
-            <p>Feel free to reach out to me with any questions or concerns by filling out the information below</p>
             <div uk-grid>
                 <div class="uk-width-1-3@m">
                     <img src="images/contact.jpg"
                     alt="Emma taking a picture" />
                 </div>
                 <div class="uk-width-expand@m">
+                    <p>Feel free to reach out to me with any questions or concerns by filling out the information below</p>
                     <form class="uk-grid-small" uk-grid>
                         <div class="uk-width-1-2@s">
                             <input class="uk-input" type="text" placeholder="Name">
