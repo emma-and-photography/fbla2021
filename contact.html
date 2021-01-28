@@ -62,7 +62,7 @@
                 </div>
                 <div class="uk-width-expand@m">
                     <p>Feel free to reach out to me with any questions or concerns by filling out the information below</p>
-                    <form class="uk-grid-small" uk-grid method="POST" action="https://formspree.io/f/mknpyalq">
+                    <form id="contact-form" class="uk-grid-small" uk-grid method="POST" action="https://formspree.io/f/mknpyalq">
                         <div class="uk-width-1-2@s">
                             <input class="uk-input" type="text" placeholder="Name" name="name">
                         </div>
@@ -75,7 +75,8 @@
                         <div class="uk-width-1-1">
                             <button type="submit" class="uk-button uk-button-primary">Send</button>
                         </div>
-                    </form>    
+                        <div hidden class="uk-alert-danger" id="form-error">Please fill in all information.</div>
+                    </form> 
                 </div>
             </div>
         </div>
@@ -100,6 +101,15 @@
 
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/js/uikit-icons.min.js"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.11/dist/js/uikit-icons.min.js"></script>
+    <script>
+        document.getElementById("contact-form").onsubmit = function(event) {
+            const { name, email, message } = event.target.elements;
+            if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
+                document.getElementById("form-error").removeAttribute("hidden");
+                event.preventDefault();
+            }
+        };
+    </script>
 </body>
 </html>
