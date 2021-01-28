@@ -62,18 +62,18 @@
                 </div>
                 <div class="uk-width-expand@m">
                     <p>Feel free to reach out to me with any questions or concerns by filling out the information below</p>
-                    <form class="uk-grid-small" uk-grid>
+                    <form class="uk-grid-small" uk-grid method="POST" action="https://formspree.io/f/mknpyalq">
                         <div class="uk-width-1-2@s">
-                            <input class="uk-input" type="text" placeholder="Name">
+                            <input class="uk-input" type="text" placeholder="Name" name="name">
                         </div>
                         <div class="uk-width-1-2@s">
-                            <input class="uk-input" type="text" placeholder="Email">
+                            <input class="uk-input" type="text" placeholder="Email" name="email">
                         </div>
                         <div class="uk-width-1-1">
-                            <textarea rows="8" class="uk-textarea" placeholder="Type your message here..."></textarea>
+                            <textarea rows="8" class="uk-textarea" placeholder="Type your message here..." name="message"></textarea>
                         </div>
                         <div class="uk-width-1-1">
-                            <a class="uk-button uk-button-primary" href="#">Submit</a>
+                            <button type="submit" class="uk-button uk-button-primary">Send</button>
                         </div>
                     </form>    
                 </div>
