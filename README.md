@@ -11,6 +11,7 @@ It also includes a sample store where customers can pay for my photo-services an
 * [UiKit](https://getuikit.com/docs/introduction) for general layout and styling
 * [SnipCart](https://snipcart.com/) for webstore and cart functionality (using test mode of course for now)
 * [Calendly](https://calendly.com/) for scheduling and booking appointments
+* [Formspree](https://formspree.io) for capturing messages submitted through contact me page
 * [GitHub](https://github.com) for storing and versioning the source code
 * [GitHub Pages](https://pages.github.com/) for hosting the website and automatically deploying the changes from the source code
 
